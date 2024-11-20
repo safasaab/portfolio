@@ -1,0 +1,126 @@
+.portfolio {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* top: 15%; */
+  margin-top: 100px;
+  /* margin: 0 auto; */
+}
+
+.portfolio .text {
+  width: 60%;
+  text-align: center;
+}
+.portfolio .text h1 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #1d2130;
+  margin-bottom: 10px;
+}
+.dark .portfolio .text h1 ,
+.dark .portfolio .text p {
+  color: #fff;}
+
+.portfolio .text p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #1d2130;
+}
+
+.portfolio .cards {
+  width: 90vw;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.portfolio .cards .card {
+  width: 33%;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 8px;
+  padding-bottom: 1rem;
+
+  border-radius: 8px;
+}
+.dark .portfolio .cards .card .cardImg img:hover{
+  filter: brightness(.5);
+
+
+}
+.portfolio .cards .card .cardImg {
+  height: 40%;
+}
+.portfolio .cards .card img {
+  width: 100%;
+  /* height: 100px; */
+  border-radius: 8px;
+  transition: 0.3s all;
+}
+.portfolio .cards .card h3 {
+  margin-bottom: 0.5rem;
+}
+.dark .portfolio .cards .card h3,
+.dark .portfolio .cards .card p{
+  color: #fff;}
+
+.portfolio .cards .card .content {
+  display: flex;
+  padding-left: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio .cards .card .content .cardIcon {
+  padding-right: 3px;
+  color: #fff;
+  width: 13%;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+
+@media screen and (max-width: 874px) {
+  .portfolio .cards {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .portfolio .cards .card h3 {
+    font-size: 1rem;
+  }
+  .portfolio .cards .card p {
+    font-size: 0.7rem;
+  }
+  /* .portfolio .cards .card {
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 720px) {
+  .portfolio .cards {
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  .portfolio .cards .card {
+    width: 100%;
+  }
+  .portfolio .cards .card .content .cardIcon {
+    width: 20%;
+  }
+}

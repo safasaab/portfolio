@@ -1,0 +1,142 @@
+nav {
+  padding: 0px 30px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eae2ee;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 1px 1px 10px rgba(170, 28, 170, 0.164);
+}
+.dark nav {
+  background-color: #5b5b5b;
+  box-shadow: 1px 1px 6px rgb(44, 43, 44);
+}
+
+nav .logo {
+  width: 15%;
+}
+nav .dark-logo {
+  width: 15%;
+}
+nav .logo img,
+nav .dark-logo img {
+  width: 64%;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 24px;
+  padding: 10px 8px;
+  margin: 10px auto;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #1d2130;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.dark nav ul li a {
+  color: #fff;
+}
+nav ul li.active a {
+  color: #9c3a94c4;
+}
+.dark nav ul li.active a {
+  color: #fa1fe8 !important;
+}
+
+nav ul li a:hover {
+  color: #9c3a94c4;
+}
+.dark nav ul li a:hover {
+  color: #fa1fe8c4;
+}
+nav button {
+  display: none;
+  border: none;
+  background-color: inherit;
+  width: 30px;
+  margin-right: 5px;
+  transition: 0.4s;
+}
+
+nav .side {
+  flex-direction: column;
+  /* justify-content: center; */
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 25%;
+  height: 100vh;
+  width: 50vw;
+  z-index: 999;
+  backdrop-filter: blur(30px);
+  text-align: center;
+  gap: 24px;
+  transform: translateX(50%);
+  display: none;
+}
+
+nav .side li {
+  width: 100%;
+  padding: 33px;
+  border-bottom: 2px solid rgba(31, 26, 26, 0.164);
+}
+nav ul.side .close {
+  display: flex;
+  justify-content: end;
+  padding: 0px 20px;
+  border-bottom: none;
+}
+nav button:hover {
+  cursor: pointer;
+}
+nav button:active {
+  scale: 0.8;
+}
+nav button.darkMode {
+  display: block;
+  position: absolute;
+  right: 100px;
+}
+.dark nav button.darkMode {
+  display: block;
+  position: absolute;
+  right: 100px;
+}
+
+@media screen and (max-width: 915px) {
+  nav button {
+    display: block;
+  }
+  nav ul.list {
+    display: none;
+  }
+  nav .logo {
+    width: 30%;
+  }
+  nav ul.side {
+    display: flex;
+  }
+  nav button.darkMode {
+    position: absolute;
+    right: 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero .left,
+  .hero .right {
+    width: 70%;
+  }
+}

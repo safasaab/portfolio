@@ -1,0 +1,226 @@
+.contact-container {
+  /* position: absolute;
+  top: 17%;
+  left: 5%; */
+  width: 90vw;
+  margin: 100px auto;
+
+  /* margin: 150px auto; */
+}
+.contact-container .container-top h1 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #1d2130;
+}
+.dark .contact-container .container-top h1,
+.dark .contact-container .container-top p{
+  color: #fff;}
+
+.dark .contact-container .container-top p span {
+  color:#fa1fe8 ;
+}
+
+.contact-container .container-top p {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #1d2130;
+}
+.contact-container .container-top p span {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 54px;
+  text-align: left;
+  color: #9c3a94;
+}
+.contact-container .content {
+  display: flex;
+  margin-top: 20px;
+  gap: 200px;
+}
+.contact-container .content .container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.contact-container .content .container-left .socialCard {
+  display: flex;
+  /* flex-direction: column;  */
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.contact-container .content .container-left .socialCard .icon {
+  width: 61.85px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9c3a94;
+  color: #fff;
+  border-radius: 10px;
+}
+.dark .contact-container .content .container-left .socialCard .icon {
+  background-color: #fa1fe8;
+}
+.contact-container .content .container-left .socialCard .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-container .content .container-left .socialCard p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.008em;
+  text-align: left;
+  color: #92929d;
+}
+.dark .contact-container .content .container-left .socialCard p {
+  color: #d8c7c7;}
+
+.contact-container .content .container-left .socialCard h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #1d2130;
+}
+.dark .contact-container .content .container-left .socialCard h4 {
+  color: #fff;
+}
+
+.contact-container .content .container-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-container .content .container-right .name,
+.contact-container .content .container-right .email {
+  background-color: transparent;
+  width: 30%;
+  height: 56px;
+  border-radius: 8px;
+outline: none;
+  border: 0.3px solid #bec0bf;
+  padding-left: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.008em;
+  text-align: left;
+}
+
+.contact-container .content .container-right .tel {
+  background-color: transparent;
+  width: 80%;
+  height: 56px;
+  border-radius: 8px;
+  border: 0.3px solid #bec0bf;
+  padding-left: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.008em;
+  text-align: left;
+  outline: none;
+}
+
+.contact-container .content .container-right textarea {
+  background-color: transparent;
+  outline: none;
+  width: 80%;
+  height: 170px;
+  border-radius: 8px;
+  padding: 10px 0 0 10px;
+  border: 0.3px solid #bec0bf;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.008em;
+  text-align: left;
+  resize: none;
+}
+
+.contact-container .content .container-right .send {
+  position: relative;
+  z-index: 1;
+  width: 175px;
+  height: 45px;
+  /* font-family: Inter; */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  background: #9c3a94;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.dark .contact-container .content .container-right .name,
+.dark .contact-container .content .container-right .email,
+.dark .contact-container .content .container-right textarea,
+.dark .contact-container .content .container-right .tel{
+  border: 0.3px solid #dae2de;
+  color: #fff;
+}
+
+.dark .contact-container .content .container-right .send {
+background-color: #fa1fe8;
+}
+.footer-container{
+  margin-top: 50px;
+width: 90vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer-container .social{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;}
+.footer-container .social a{
+text-decoration: none;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: #9c3a94;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+ .dark .footer-container p{
+  color: #fff;
+ }
+
+ .dark .footer-container .social a{
+background-color: #fa1fe8; 
+}
+
+
+@media screen and (max-width: 970px) {
+    .contact-container    .content{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contact-container .content .container-right .name,
+    .contact-container .content .container-right .email,
+    .contact-container .content .container-right .tel {
+width: 100%;
+}
+}

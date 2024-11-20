@@ -1,0 +1,125 @@
+.about{
+    width: 100vw;
+    margin-top: 150px;
+    /* margin: 0 auto; */
+    /* position: absolute; */
+/* top: 27%; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin-top: 250px; */
+    margin-bottom: 100px;
+}
+
+.about .container{
+    width: 80vw;
+    margin: 0 auto;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.about .container h1{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: .03em;
+    text-align: center;
+    color: #1d2130;
+}
+.dark .about .container h1,
+.dark .about .container p{
+    color: #fff;
+}
+
+.about .container h2{
+    font-family: IM Fell French Canon SC, serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #9c3a94c4;
+}
+.dark .about .container h2{
+    color: #fa1fe8;
+    
+}
+.about .container p{
+    width: 50vw;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: .03em;
+    text-align: center;
+    color: #1d2130;
+}
+
+.slider{
+    /* height:250px; */
+    margin-top: 70px;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+    /* flex-wrap: nowrap; */
+}
+.slider .slideTrack{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* width: calc( 250px * 14 ); */
+    gap: 200px;
+    animation: 25s slide infinite linear;
+}
+
+.slider .slideTrack:hover{
+animation-play-state: paused;}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.slider .SlideTrack .slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    /* margin-right: 100px; */
+}
+.slider .SlideTrack .slide img{
+    width: 100%;
+    height: 50px;
+}
+
+/* .slider::before,
+.slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1)0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height:100%;
+    position: absolute;
+width: 15%;
+z-index: 2;
+}
+.slider::before{
+    left:0;
+    top: 0;
+}
+
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ('180deg');
+} */
